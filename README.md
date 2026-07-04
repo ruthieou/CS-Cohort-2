@@ -6,9 +6,18 @@ automatically uploads it to SiteGround via FTPS.
 ## One-time setup
 
 ### 1. Create the repo
-On github.com: New repository (private is fine), then drag the contents of
-this folder into it (including the `.github` folder — enable "hidden files"
-visibility if you don't see it after unzipping).
+On github.com: New repository (private is fine), then drag `index.html`
+into it and commit.
+
+### 1b. Add the workflow file (do NOT drag it)
+In the repo, click **Add file → Create new file**. In the name box type
+exactly:
+
+    .github/workflows/deploy.yml
+
+(GitHub turns the slashes into folders automatically.) Then open
+`deploy-workflow-COPY-ME.yml` from this kit in any text editor, paste its
+contents into the file, and commit.
 
 ### 2. Create an FTP account on SiteGround
 Site Tools → Site → FTP Accounts → Create:
